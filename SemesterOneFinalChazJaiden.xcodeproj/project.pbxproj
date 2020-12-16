@@ -17,6 +17,7 @@
 		A078BE1B257F08B700D0259C /* SemesterOneFinalChazJaidenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078BE1A257F08B700D0259C /* SemesterOneFinalChazJaidenUITests.swift */; };
 		A078BE2D2586CAB500D0259C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A078BE2C2586CAB500D0259C /* Main.storyboard */; };
 		A0C273D025858B4C00BBDF91 /* PointsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C273CF25858B4C00BBDF91 /* PointsFile.swift */; };
+		A0E3C8B32589CAC000362D22 /* ViewControllerSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A078BE1C257F08B700D0259C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A078BE2C2586CAB500D0259C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0C273CF25858B4C00BBDF91 /* PointsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsFile.swift; sourceTree = "<group>"; };
+		A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSudoku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A078BE2C2586CAB500D0259C /* Main.storyboard */,
 				A078BDF7257F08B200D0259C /* SceneDelegate.swift */,
 				A078BDF9257F08B200D0259C /* ViewController.swift */,
+				A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */,
 				A0C273CF25858B4C00BBDF91 /* PointsFile.swift */,
 				A078BE01257F08B700D0259C /* Assets.xcassets */,
 				A078BE03257F08B700D0259C /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				A0C273D025858B4C00BBDF91 /* PointsFile.swift in Sources */,
 				A078BDF6257F08B200D0259C /* AppDelegate.swift in Sources */,
 				A078BDF8257F08B200D0259C /* SceneDelegate.swift in Sources */,
+				A0E3C8B32589CAC000362D22 /* ViewControllerSudoku.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
