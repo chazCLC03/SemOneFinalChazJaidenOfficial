@@ -31,7 +31,13 @@ class ViewControllerFinal: UIViewController {
         performSegue(withIdentifier: "UnwindSeg", sender: self)
     }
             //set vc to first one
-        //PointsFile.totalPoints = 500
+    var setToOGPoints : PointsFile = PointsFile(p: 500)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewController
+        nvc.restorePts = setToOGPoints
+    }
+
     
 
 }

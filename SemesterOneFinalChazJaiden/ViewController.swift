@@ -16,15 +16,24 @@ class ViewController: UIViewController {
 
     
 
-   
+    var playingAgain = false
+    
+    var restorePts : PointsFile
 
-    var pts = PointsFile(p: 500)
+    var pts : PointsFile!
 
     static var timer : Timer?
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        if(!playingAgain){
+            pts = PointsFile(p: 500)
+        }
+        else {
+            
+        }
 
         ViewController.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
 
