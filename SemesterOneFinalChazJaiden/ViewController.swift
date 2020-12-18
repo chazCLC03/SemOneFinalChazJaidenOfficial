@@ -35,13 +35,30 @@ class ViewController: UIViewController {
     }
 
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewControllerRiddle
+        nvc.pts = pts
+    }
+
+    
+    
+    
 
     @objc func fireTimer() {
 
           pts.changePts(s : 1, b : false)
 
          }
+    
+    @IBAction func startBtn(_ sender: UIButton) {
+        
+    }
+    
 
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        
+    }
 
 
 }

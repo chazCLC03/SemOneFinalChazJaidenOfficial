@@ -40,20 +40,32 @@ var answers = [4,2,5,7,4]
 
 var i = 0
 
-var arBtn : [UIButton]
-
+var pts : PointsFile!
 
 
 class ViewControllerSudoku: UIViewController {
 
 
-
+    @IBOutlet weak var ptsOutlet: UILabel!
+    var pts : PointsFile!
+    @IBOutlet weak var proceedBtn: UIButton!
+    
+    
+    @IBOutlet weak var midTwo: UILabel!
+    @IBOutlet weak var midSeven: UILabel!
+    @IBOutlet weak var midFive: UILabel!
+    @IBOutlet weak var lowMidFour: UILabel!
+    @IBOutlet weak var leftMidFour: UILabel!
+    
+    var arBtn : [UILabel]!
+    
+    @IBOutlet weak var textfield: UITextField!
     override func viewDidLoad() {
-
         super.viewDidLoad()
-
-        //highlight midL4 label
-
+        ptsOutlet.text = "\(pts.totalPoints)pts"
+        arBtn = [leftMidFour,midTwo,midFive,midSeven,lowMidFour]
+        highlight(index: -1)
+        proceedBtn.isHidden = true
         // Do any additional setup after loading the view.
 
     }
@@ -61,16 +73,16 @@ class ViewControllerSudoku: UIViewController {
     
 
     //checkbutton
-
-    /*if(checkAnswer(input: textfield.text) && isCorrect(ans: Int(textField.text), index: i){
-
-     highlight(index: i)
-
-     }
-
-     i+=1
-
-    */
+    @IBAction func checkButton(_ sender: UIButton) {
+        if checkAnswer(input: textfield.text!) && isCorrect(ans: Int(textfield.text!)!, index: i){
+        highlight(index: i)
+        i += 1
+        }
+        ptsOutlet.text = "\(pts.totalPoints)pts"
+        
+    }
+    
+    
 
     
 
@@ -119,9 +131,20 @@ class ViewControllerSudoku: UIViewController {
     
 
     func highlight(index: Int){
+        if (i < 4){
+            arBtn[index+1].backgroundColor = UIColor.red
+        }
+        else{
+            proceedBtn.isHidden = false
+        }
+        
 
-        arBtn[index+1].backgroundColor = UIColor.red
+    }
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewControllerFinal
+        nvc.pts = pts
     }
 
     

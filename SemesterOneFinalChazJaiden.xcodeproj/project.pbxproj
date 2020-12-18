@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A019B9BD258C56D9003236A1 /* ViewControllerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019B9BC258C56D9003236A1 /* ViewControllerFinal.swift */; };
 		A078BDF6257F08B200D0259C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078BDF5257F08B200D0259C /* AppDelegate.swift */; };
 		A078BDF8257F08B200D0259C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078BDF7257F08B200D0259C /* SceneDelegate.swift */; };
 		A078BDFA257F08B200D0259C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078BDF9257F08B200D0259C /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 		A078BE2D2586CAB500D0259C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A078BE2C2586CAB500D0259C /* Main.storyboard */; };
 		A0C273D025858B4C00BBDF91 /* PointsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C273CF25858B4C00BBDF91 /* PointsFile.swift */; };
 		A0E3C8B32589CAC000362D22 /* ViewControllerSudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */; };
+		A0E3C8B5258B1AEF00362D22 /* ViewControllerRiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C8B4258B1AEF00362D22 /* ViewControllerRiddle.swift */; };
+		A0E3C8B7258B1CFF00362D22 /* ViewControllerMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C8B6258B1CFF00362D22 /* ViewControllerMath.swift */; };
+		A0E3C8BB258BF75500362D22 /* ViewControllerCodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3C8BA258BF75500362D22 /* ViewControllerCodeLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A019B9BC258C56D9003236A1 /* ViewControllerFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFinal.swift; sourceTree = "<group>"; };
 		A078BDF2257F08B200D0259C /* SemesterOneFinalChazJaiden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SemesterOneFinalChazJaiden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A078BDF5257F08B200D0259C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A078BDF7257F08B200D0259C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +60,9 @@
 		A078BE2C2586CAB500D0259C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0C273CF25858B4C00BBDF91 /* PointsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsFile.swift; sourceTree = "<group>"; };
 		A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSudoku.swift; sourceTree = "<group>"; };
+		A0E3C8B4258B1AEF00362D22 /* ViewControllerRiddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRiddle.swift; sourceTree = "<group>"; };
+		A0E3C8B6258B1CFF00362D22 /* ViewControllerMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMath.swift; sourceTree = "<group>"; };
+		A0E3C8BA258BF75500362D22 /* ViewControllerCodeLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerCodeLock.swift; path = ../ViewControllerCodeLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,10 @@
 			children = (
 				A078BDF5257F08B200D0259C /* AppDelegate.swift */,
 				A078BE2C2586CAB500D0259C /* Main.storyboard */,
+				A019B9BC258C56D9003236A1 /* ViewControllerFinal.swift */,
+				A0E3C8BA258BF75500362D22 /* ViewControllerCodeLock.swift */,
+				A0E3C8B6258B1CFF00362D22 /* ViewControllerMath.swift */,
+				A0E3C8B4258B1AEF00362D22 /* ViewControllerRiddle.swift */,
 				A078BDF7257F08B200D0259C /* SceneDelegate.swift */,
 				A078BDF9257F08B200D0259C /* ViewController.swift */,
 				A0E3C8B22589CAC000362D22 /* ViewControllerSudoku.swift */,
@@ -271,9 +283,13 @@
 				A078BE00257F08B200D0259C /* SemesterOneFinalChazJaiden.xcdatamodeld in Sources */,
 				A078BDFA257F08B200D0259C /* ViewController.swift in Sources */,
 				A0C273D025858B4C00BBDF91 /* PointsFile.swift in Sources */,
+				A0E3C8BB258BF75500362D22 /* ViewControllerCodeLock.swift in Sources */,
 				A078BDF6257F08B200D0259C /* AppDelegate.swift in Sources */,
+				A0E3C8B7258B1CFF00362D22 /* ViewControllerMath.swift in Sources */,
 				A078BDF8257F08B200D0259C /* SceneDelegate.swift in Sources */,
+				A019B9BD258C56D9003236A1 /* ViewControllerFinal.swift in Sources */,
 				A0E3C8B32589CAC000362D22 /* ViewControllerSudoku.swift in Sources */,
+				A0E3C8B5258B1AEF00362D22 /* ViewControllerRiddle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
